@@ -1,2 +1,7 @@
 # fyp
-A final year project that aims to identify and evaluate different state-of-the-art imputation methods that effectively improve classification performance under the module MH4900 of SPMS, NTU. This project is done by myself under the supervision of Professor Xiang.
+
+## Model-based classification with predictors subjected to detection limit
+
+In the biomedical field, important factors such as biomarkers are often left censored due to the limitations of the measuring instruments. Classification cannot be performed on a dataset with predictors subjected to detection limit and hence needs to be processed. Imputation, the process of assigning a value to the missing ones, is used to keep the information in the dataset to the greatest extent while outputting a complete dataset. This project aims to identify and evaluate different state-of-the-art imputation methods that effectively improve classification performance. Examples such as Multiple Imputation by Chained Equations (MICE) and Generative Adversarial Imputation Nets (GAIN) will be used to complete the dataset and their performance will be evaluated after fitting the logistic regression model to the different imputed datasets. Necessary metrics such as mean squared error and accuracy will be used for comparison. It was found that GAIN performed the best when the censored rate was low, while MICE performed consistently well in different situations. A small subset of data from the study of Genetic and Inflammatory Markers of Sepsis (GenIMS) is also being used to conduct real case analysis, but it is not included in the codes due to sensitivity. Only the simulation codes are available.
+
+URI: https://hdl.handle.net/10356/181352
